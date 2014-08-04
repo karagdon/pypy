@@ -1,0 +1,6 @@
+print int("1",2)
+prnt int("10",10)
+print int("111",2)
+print int("0100",2")
+print int(bin(5),2)
+print int("0b11001001",2)
