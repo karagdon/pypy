@@ -38,3 +38,16 @@ print "======================\n"
 
 print "bin(0b1110|0b0101)"
 print "= ",bin(0b1110|0b0101)
+
+#XOR (^) or exclusive or operator compares two numbers on a bit level and returns a number where the bits of that number are turned on if either of the corresponding bits of the two numbers are 1, but not both.
+
+
+# 1 1 1 0
+# 0 1 0 1
+# = = = =
+# 1 0 1 1 thus 0b1011 should appear
+print "XOR FUNCTION"
+print "======================\n"
+
+print "bin(0b1110 ^ 0b101)"
+print "=", bin(0b1110 ^ 0b101)
