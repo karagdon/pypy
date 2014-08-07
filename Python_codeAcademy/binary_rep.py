@@ -13,6 +13,16 @@ print oct(11)
 #BITWISE OPERATORS#
 
 
+# 0b1110
+# 0b0101
+# 0b0100
+
+print "AND FUNCTION, A&B"
+print "======================\n"
+
+print "bin(0b1110 & 0b101)"
+print "= ",bin(0b1110&0b101)
+
 # THIS OR THAT >> A|B
 
 #The bitwise OR (|) operator compares two numbers on a bit level and returns a number where the bits of that number are turned on if either of the corresponding bits of either number are 1.
@@ -22,9 +32,9 @@ print oct(11)
 # ======
 # 0b1111
 
+print "OR FUNCTION, A|B"
+print "======================\n"
+
+
 print "bin(0b1110|0b0101)"
-print bin(0b1110|0b0101)
-
-
-
-
+print "= ",bin(0b1110|0b0101)
