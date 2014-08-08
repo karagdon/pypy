@@ -11,3 +11,6 @@ class Animal(object):
         #instantiate the object self with the parameter name
         self.name = name
 
+#dot notation
+zebra = Animal("Jeffrey")
+print zebra.name
