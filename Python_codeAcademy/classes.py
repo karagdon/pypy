@@ -24,6 +24,8 @@ class Animal(object):
     def __init__(self, name, age, is_hungry):
         self.name = name
         self.age = age
+        # *** added to function
+        self.is_hungry = is_hungry
     
 # Note that self is only used in the __init__()
 # function definition; we don't need to pass it
@@ -36,3 +38,39 @@ panda = Animal("Chad", 7, True)
 print zebra.name, zebra.age, zebra.is_hungry
 print giraffe.name, giraffe.age, giraffe.is_hungry
 print panda.name, panda.age, panda.is_hungry
+
+
+##### SCOPE #####
+
+pclass Animal(object):
+    """Makes cute animals."""
+    is_alive = True
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+zebra = Animal("Jeffrey", 2)
+giraffe = Animal("Bruce", 1)
+panda = Animal("Chad", 7)
+
+print zebra.name, zebra.age, zebra.is_alive
+print giraffe.name, giraffe.age, giraffe.is_alive
+print panda.name, panda.age, panda.is_alive
+
+
+
+##### METHODS #####
+
+class Animal(object):
+    """Makes cute animals."""
+    is_alive = True
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+   
+    # Add your method here!
+     def description(Animal):
+       print Animal.name
+       print Animal.age
+      hippo=Animal("Hippy", 22)
+      hippo.description()
