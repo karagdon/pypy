@@ -64,13 +64,13 @@ print panda.name, panda.age, panda.is_alive
 class Animal(object):
     """Makes cute animals."""
     is_alive = True
-    hippo = Animal("hippo", 1)
     def __init__(self, name, age):
         self.name = name
         self.age = age
     # Add your method here!
-    def description(Animal):
-        print name
-        print age
-    hippo.description()
+    def description(self):
+        print self.name
+        print self.age
 
+hippo = Animal('Adi',5)
+hippo.description()
