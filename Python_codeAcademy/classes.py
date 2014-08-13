@@ -74,3 +74,33 @@ class Animal(object):
 
 hippo = Animal('Adi',5)
 hippo.description()
+
+
+##### MEMBER VARIABLES #####
+
+class Animal(object):
+    """Makes cute animals."""
+    
+    #THESE ARE MEMBER VARIABLES, THEY BE COOL
+    health = "good"
+    is_alive = False
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+        
+    # Add your method here!
+    def description(self):
+        print self.name
+        print self.age
+        print self.health
+        print self.is_alive
+
+hippo = Animal('Adi',5)
+hippo.description()
+
+sloth = Animal('Bdi',6)
+sloth.description()
+
+ocelot = Animal('Cdi',7)
+ocelot.description()
+
