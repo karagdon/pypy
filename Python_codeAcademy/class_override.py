@@ -14,3 +14,9 @@ class PartTimeEmployee(Employee):
     def calculate_wage(self, hours):
         self.hours = hours
         return hours * 12.00
+    def full_time_wage(self, hours):
+        return super(PartTimeEmployee, self).calculate_wage(hours)
+        
+#I dont get why this calls for both 10 in each of the args below
+milton = PartTimeEmployee(10)
+print milton.full_time_wage(10)
