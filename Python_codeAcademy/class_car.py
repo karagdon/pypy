@@ -9,5 +9,5 @@ class Car(object):
         return
 #my_car = Car("DeLorean", "silver", 88)
 #print my_car.condition
-mycar = Car('DeLorean','silver',88)
-print mycar.condition, mycar.model, mycar.color, mycar.mpg
+my_car = Car('DeLorean','silver',88)
+print my_car.condition, my_car.model, my_car.color, my_car.mpg
