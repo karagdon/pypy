@@ -1,5 +1,6 @@
 #starting new code
-print "hello world"
+refile= raw_input('hello world, what file do you want to rename?')
+
 
 #maybe we can start with a file renaming thing
 import os, sys
