@@ -1,16 +1,17 @@
-#starting new code
+#currently this code will rename itself if given only one argument. I wonder why that is the case.
 
 
 #maybe we can start with a file renaming thing
 import os, sys
-from sys import argv
-refile, newfile = argv
+#from sys import argv
+##too many arguments, how do i fix this?
+#refile, newfile = argv
 
 # list the director
 print "The dir has: %s"%os.listdir(os.getcwd())
 
-# refile = raw_input('hello world, what file do you want to rename?')
-# newfile = raw_input('what should we name it to?')
+refile = raw_input('hello world, what file do you want to rename?')
+newfile = raw_input('what should we name it to?')
 
 
 # renaming directory ''tutorialsdir"
