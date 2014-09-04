@@ -3,9 +3,13 @@
 
 #maybe we can start with a file renaming thing
 import os, sys
-#from sys import argv
+from sys import argv
 ##too many arguments, how do i fix this?
-#refile, newfile = argv
+script, first, second = argv
+
+print("the script is called:", (script))
+print("your first variable is:", (first))
+print("your second variable is:", (second))
 
 # list the director
 print "The dir has: %s"%os.listdir(os.getcwd())
