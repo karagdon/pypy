@@ -11,8 +11,8 @@ script, refile, newfile = argv
 # list the director
 print "The dir has: %s"%os.listdir(os.getcwd())
 
-refile = raw_input('hello world, what file do you want to rename?')
-newfile = raw_input('what should we name it to?')
+#refile = raw_input('hello world, what file do you want to rename?')
+#newfile = raw_input('what should we name it to?')
 
 print("the script is called:", (script))
 print("original file:", (refile))
