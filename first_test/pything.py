@@ -5,17 +5,18 @@
 import os, sys
 from sys import argv
 ##too many arguments, how do i fix this?
-script, first, second = argv
+script, refile, newfile = argv
 
-print("the script is called:", (script))
-print("your first variable is:", (first))
-print("your second variable is:", (second))
 
 # list the director
 print "The dir has: %s"%os.listdir(os.getcwd())
 
 refile = raw_input('hello world, what file do you want to rename?')
 newfile = raw_input('what should we name it to?')
+
+print("the script is called:", (script))
+print("original file:", (refile))
+print("new file:", (newfile))
 
 
 # renaming directory ''tutorialsdir"
