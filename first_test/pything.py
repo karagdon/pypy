@@ -8,7 +8,7 @@ script, refile, newfile = argv
 if os.path.exists(refile):
   print "%s ---> %s, Success!" % (refile,newfile)
   os.renames(refile, newfile)
-  print "File(s) successfully renamed. The dir now has: %s"%os.listdir(os.getcwd())
+  print "New DIR has: %s" % os.listdir(os.getcwd())
   
 else:
   print "%s doesn't exist"%refile
