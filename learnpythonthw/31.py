@@ -1,4 +1,4 @@
-print "You enter a dark room with two doors. Do you go throuhg door #1 or door #2?"
+print "You enter a dark room with two doors. Do you go through door #1 or door #2?"
 
 door = raw_input ("> ")
 if door == "1":
@@ -25,6 +25,7 @@ elif door == "2":
     
     if insanity == "1" or insanity == "2":
         print "Your body survives powered by a mind of jellow. Good job!"
-        print "The insanity rots your eyes into a pool of muck.  Good job!"
     else:
+        print "The insanity rots your eyes into a pool of muck.  Good job!"
+else:
         print "You stumble around and fall on a knife and die.  Good job!"
