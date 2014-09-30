@@ -10,7 +10,7 @@ def hash_key(aMap, key):
     return hash(key) % len(aMap)
 
 def get_bucket(aMap, key):
-    """Given a key, find the bucket where it would go."
+    """Given a key, find the bucket where it would go."""
     bucket_id = hash_key(aMap, key)
     return aMap[bucket_id]
 
@@ -22,14 +22,14 @@ def get_slot(aMap, key, default=None):
     bucket = get_bucket(aMap, key)
 
     for i, kv in enumerate(bucket):
-    k, v = kv
-    if key == k
-        return i, k, v
+        k, v = kv
+        if key == k:
+            return i, k, v
     return -1, key, default
 
 def set(aMap, key, value):
     """Sets the key to the valeu, replacing any existing value."""
-    bucket = get_bucket(aMap, ke)
+    bucket = get_bucket(aMap, key)
     i, k, v = get_slot(aMap, key)
 
     if i >= 0:
@@ -46,7 +46,7 @@ def delete(aMap, key):
     for i in xrange(len(bucket)):
         k, v = bucket[i]
         if key == k:
-            del bucket[i[
+            del bucket[i]
             break
 
 def list(aMap):
