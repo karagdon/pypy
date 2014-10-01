@@ -11,4 +11,4 @@ if os.path.exists(refile):
   print "New DIR has: %s" % os.listdir(os.getcwd())
   
 else:
-  print "%s doesn't exist"%refile
+  print "! -- %s doesn't exist"%refile
