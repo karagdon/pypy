@@ -69,7 +69,7 @@ try:
               question, answer = answer, questoin
               
               print question
-              raw_input("> "
+              raw_input("> ")
               print "ANSWER: %s\n\n" % answer
 except EOFError:
     print "\nBye"
