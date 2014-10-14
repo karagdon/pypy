@@ -1,4 +1,3 @@
-# TODO: Make a class for amphibians
 
 # Game idea
 print "Welcome to the PETSHOP OF HORRORS, what kind of pet would you be interested in?\n * [A]mphibians \n * [B]ird\n * [C]at\n * [D]og\n * [E]lephant"
@@ -20,24 +19,31 @@ else:
   print "You're dumb. We don't have that."
 
 # All Pets: Name, Age, Color
-# Amphibians: Snakes, Lizards, Frogs
-# Snakes: Poisonous?
-# Lizards: Spikey?
-# Frogs: Mutant?
 
+# TODO: multi-dimensional array for each petType
 
+AmpType = Amphibians[i]
 #classes for each pet
 class Amphibian(AmpType)
     def frog(self)
+        attributes = "just slimy"
         
-        pass
     def snake(self)
+        attributes = "kind of scary"
         
-        pass
     def lizard(self)
-        
+        attributes = "really sneaky"
         pass
 
+
+# TODO: randomGenerator
+### random color
+### random temperment
+
 #buy a pet
-#take it home
-#pet does something
+class boughtpet(petType)
+    pet.name = petsName
+    pet.mood = randTemperment
+    pet.color = randPetColor
+    
+    
