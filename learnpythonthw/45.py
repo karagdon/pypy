@@ -1,8 +1,8 @@
 
 # Game idea
 print "Welcome to the PETSHOP OF HORRORS, what kind of pet would you be interested in?\n * [A]mphibians \n * [B]ird\n * [C]at\n * [D]og\n * [E]lephant"
-
-petType =  {
+#class Type():
+type =  {
   'A' : "Amphibian",
   'B' : "Bird",
   'C' : "Cat",
@@ -13,37 +13,34 @@ choosePetType = raw_input("> ")
 choosePetType = choosePetType.upper()
 choosePetType = choosePetType.strip()
 
-if choosePetType in petType:
-  print "%ss, great choice... *cackle*" % (petType[choosePetType])
+
+if choosePetType in type:
+  print "%ss, great choice... one second... *cackle*" % (type[choosePetType])
 else:
   print "You're dumb. We don't have that."
 
-# All Pets: Name, Age, Color
+print type[choosePetType]
 
-# TODO: multi-dimensional array for each petType
-
-AmpType = Amphibians[i]
-#classes for each pet
-class Amphibian(AmpType)
-    def frog(self)
-        attributes = "just slimy"
-        
-    def snake(self)
-        attributes = "kind of scary"
-        
-    def lizard(self)
-        attributes = "really sneaky"
+class Pet(object):
+    def __init__(self):
         pass
 
+#Available selection for each of the attributes
+colorArr = ['pink','yellow','white']
+nameArr = ['fluffy', 'cuddles', 'cupcake']
+scareArr = ['bloody horns', 'glowy-green skin', 'creepy sounds']
 
-# TODO: randomGenerator
-### random color
-### random temperment
+#I want a random selection
+import random
+color = random.choice(colorArr)
+name = random.choice(nameArr)
+scare = random.choice(scareArr)
+       
 
-#buy a pet
-class boughtpet(petType)
-    pet.name = petsName
-    pet.mood = randTemperment
-    pet.color = randPetColor
-    
-    
+"""
+Goal:
+pet.type = petType
+pet.name = name
+pet.color = color
+pet.scare = scare
+"""
