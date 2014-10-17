@@ -1,6 +1,11 @@
 # Game idea
 print "Welcome to the PETSHOP OF HORRORS, what kind of pet would you be interested in?\n * [A]mphibians \n * [B]ird\n * [C]at\n * [D]og\n * [E]lephant"
-#class Type():
+
+#class Pet(object):
+#    def __init__(self):
+#		pass
+
+#class Type(self):
 petType =  {
   'A' : "Amphibian",
   'B' : "Bird",
@@ -12,38 +17,30 @@ choosePetType = raw_input("> ")
 choosePetType = choosePetType.upper()
 choosePetType = choosePetType.strip()
 
-
 if choosePetType in petType:
   print "%ss, great choice... one second... *cackle*" % (petType[choosePetType])
 else:
   print "We don't have that. Try again tomorrow."
 
-#class Pet(object):
-#    def __init__(self):
-#        self.bought = false
-#
+
 #    def Color(self):
-        #colors available
-        # Shuffle
-            # Choose random 1-5
-            # Player can choose one from up to 5.
-        
 colorHash = {
-            'r' : 'R]ed',
-            'o' : 'O]range',
-            'y' : 'Y]ellow',
-            'g' : 'G]reen',
-            'b' : 'B]lue',
-            'i' : 'I]ndigo',
-            'v' : 'V]iolet',
-            'w' : 'W]hite',
-            'gr' : 'Gr]ay',
-            'bl' : 'Bl]ack',
-            'br' : 'Br]own'
-        }
+        'r' : 'R]ed',
+        'o' : 'O]range',
+        'y' : 'Y]ellow',
+        'g' : 'G]reen',
+        'b' : 'B]lue',
+        'i' : 'I]ndigo',
+        'v' : 'V]iolet',
+        'w' : 'W]hite',
+        'gr' : 'Gr]ay',
+        'bl' : 'Bl]ack',
+        'br' : 'Br]own'
+    }
+    
 import random
 haveColors = random.sample(colorHash, 5)
-print "We have %ss in these colors today:" % petType[choosePetType]
+print "Shop owner: We have %ss in these colors today:" % petType[choosePetType]
 
 for i in haveColors:
     print " * ["+colorHash[i]
@@ -53,29 +50,34 @@ chooseColor = raw_input("> ")
 chooseColor = chooseColor.lower()
 chooseColor = chooseColor.strip()
 
-#purchasing the pet
 if chooseColor in haveColors:
-	print "%s, great choice...  Would you like to purchase?" % (colorHash[chooseColor])
+	print "Shop owner: You want that %s %s? There are *NO* returns. \n * [Y]es\n * [N]o" % (colorHash[chooseColor], (petType[choosePetType]))
  	purchased = raw_input("> ")
 else:
-  print "We don't have that, maybe tomorrow."
+	print "Shop owner: We don't have that, maybe tomorrow."
 
 purchased = purchased.lower()
 purchased = purchased.strip()
 
+#def name(self):
 if purchased == 'y':
-	#pet.boughtDate = #get current date time mmddyy hh:mm
+	print "You spend all your money to buy the pet. You are now broke. The shop owner cackles as you exit the store. Meanwhile, you decide on your new pet's name..."
+	name = raw_input("> ")
+	print "Interesting choice for a name.."
 else:
-	print "Quit wasting my time, Halloween is coming!"
+	print "Shop owner: Quit wasting my time, Halloween is coming!"
 
-# TODO: class Interact():
-      #create a sequence from a set of actions, this particular sequence will trigger the scare
-          #3 actions, each with either a 'scareTrigger' value of 1 or 0, once this value accumulates to 3, the the scare is trigger.
-# TODO: class Scare():
-#    def __init__(self,...)
-        
-#        pass
-      
+
+'''
+scare trigger: analyze the name, if the pet 'likes' the name, the pet will not eat you and you live(for now), if it does not, it will eat you.
+mood = good | bad
+	good = likes the name
+	bad = does not like the name
+	
+scareTrigger = 1
+'''
+
+
 """
 Goal:
 pet.type = petType
