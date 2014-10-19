@@ -1,9 +1,9 @@
 # Game idea
 print "Welcome to the PETSHOP OF HORRORS, what kind of pet would you be interested in?\n * [A]mphibians \n * [B]ird\n * [C]at\n * [D]og\n * [E]lephant"
 
-#class Pet(object):
-#    def __init__(self):
-#		pass
+class Pet(object):
+    def __init__(self):
+		pass
 
 #class Type(self):
 petType =  {
@@ -80,8 +80,6 @@ scareScore += scareScore.upper()
 for s in name:
 	if s in scareScore:
 		points += 1
-print points
-print len(name)
 
 randDeath = [
 	"set fire to your hair",
@@ -100,23 +98,10 @@ randDeath = random.sample(randDeath, 1)
 if points >= (len(name)):
 	print "%s does not kill you as you approach it" % name
 else:
-	print "%s hates you, and terrorizes the city. You also %s and die. GG." % (name,randDeath)
-
-
-print points
-print "".join(set(scareScore))
-
-
+	print "%s hates you, and terrorizes the city. You also %s and die. GG." % (name, randDeath)
 
 
 #print "Your scare score is: %s" % scareScore
-"""
-scare trigger: analyze the name, if the pet 'likes' the name, the pet will not eat you and you live(for now), if it does not, it will eat you.
-mood = good | bad
-	good = likes the name
-	bad = does not like the name
-scareTrigger = 1
-"""
 
 """
 Goal:
