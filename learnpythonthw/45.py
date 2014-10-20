@@ -5,7 +5,7 @@ class Pet(object):
     def __init__(self):
 		pass
 
-#class Type(self):
+class Type(self):
 petType =  {
 	'A' : "Amphibian",
 	'B' : "Bird",
@@ -24,7 +24,7 @@ else:
 	print "We don't have that. Try again tomorrow."
 	raise SystemExit
 
-#    def Color(self):
+def Color(self):
 colorHash = {
         'r' : 'R]ed',
         'o' : 'O]range',
@@ -95,6 +95,7 @@ randDeath = [
 	"stand on the edge of a train station platform"
 	]
 randDeath = random.sample(randDeath, 1)
+
 if points >= (len(name)):
 	print "%s does not kill you as you approach it" % name
 else:
