@@ -1,3 +1,5 @@
+# TODO: test classes and call them
+
 # Game idea
 print "Welcome to the PETSHOP OF HORRORS, what kind of pet would you be interested in?\n * [A]mphibians \n * [B]ird\n * [C]at\n * [D]og\n * [E]lephant"
 
