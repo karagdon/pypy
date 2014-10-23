@@ -6,8 +6,11 @@ print "Welcome to the PETSHOP OF HORRORS, what kind of pet would you be interest
 class Pet(object):
     def __init__(self):
 		description = "cute"
-		return
-def Type(self):
+		self.current = 0
+		
+		return Pet.self
+	
+	def Types(self):
 	petType =  {
 		'A' : "Amphibian",
 		'B' : "Bird",
@@ -25,8 +28,8 @@ def Type(self):
 	else:
 		print "We don't have that. Try again tomorrow."
 		raise SystemExit
-
-	return petType
+	types = choosePetType
+	return pet.types
 """
 def Color(self):
 	colorHash = {
