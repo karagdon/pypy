@@ -118,4 +118,4 @@ pet.name = name
 pet.color = color
 pet.scare = scare
 """
-print pet.Type
+print pet.types
