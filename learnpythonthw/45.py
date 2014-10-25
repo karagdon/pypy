@@ -4,11 +4,11 @@
 print "Welcome to the PETSHOP OF HORRORS, what kind of pet would you be interested in?\n * [A]mphibians \n * [B]ird\n * [C]at\n * [D]og\n * [E]lephant"
 
 class Pet(object):
-    def __init__(self):
-		description = "cute"
-		self.current = 0
-		
-		return Pet.self
+    def __init__(self,types,color,name,scare):
+		self.types = types
+		self.color = color
+		self.name = name
+		self.scare = scare
 	
 	def Types(self):
 	petType =  {
