@@ -30,7 +30,7 @@ class Pet(object):
 		raise SystemExit
 	types = choosePetType
 	return pet.types
-"""
+
 def Color(self):
 	colorHash = {
 	        'r' : 'R]ed',
@@ -119,3 +119,4 @@ pet.color = color
 pet.scare = scare
 """
 print pet.types
+"""
