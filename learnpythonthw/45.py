@@ -1,4 +1,4 @@
-# TODO: test classes and call them
+TODO: test classes and call them
 
 # Game idea
 print "Welcome to the PETSHOP OF HORRORS, what kind of pet would you be interested in?\n * [A]mphibians \n * [B]ird\n * [C]at\n * [D]og\n * [E]lephant"
@@ -113,7 +113,7 @@ else:
 
 
 Goal:
-pet.type = petType
+pet.types = petType
 pet.name = name
 pet.color = color
 pet.scare = scare

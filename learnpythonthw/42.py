@@ -44,7 +44,6 @@ class Fish(object):
 class Salmon(Fish):
 	pass
 
-## ?? nothing happens, this is a null operation. a 'placeholder'Í
 class Halibut(Fish):
 	pass
 
@@ -92,7 +91,6 @@ class Fish(object):
 class Salmon(Fish):
 	pass
 
-## ?? nothing happens, this is a null operation. a 'placeholder'Í
 class Halibut(Fish):
 	pass
 
