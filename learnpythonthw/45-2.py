@@ -15,3 +15,18 @@ class Cat(object):
 my_cat = Cat("whiskers", "meow!")
 my_cat.description()
 my_cat.animalSound()
+
+class Dog(object):
+	def __init__(self,color,drool)
+		self.color = color
+		self.drool = droolAmt
+		
+	def dogColor(self)
+		print self.color
+
+	def droolAmount(self)
+		print self.drool
+
+my_dog = Dog("blue", "a lot")
+my_dog.dogColor()
+my_dog.droolAmount()
