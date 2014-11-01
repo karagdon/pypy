@@ -11,7 +11,7 @@ config = {
     'author_email': 'My email is TBD.',
     'version': '0.1',
     'install_requires': ['nose'],
-    'packages': ['NAME'],
+    'packages': ['k8Proj'],
     'scripts': [],
     'name': 'k8Proj'
 }
