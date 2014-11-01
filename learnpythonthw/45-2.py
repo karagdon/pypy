@@ -8,7 +8,7 @@ class Cat(object):
 		
 	def description(self):
 		print self.name
-	
+
 	def animalSound(self):
 		print self.sound
 	
