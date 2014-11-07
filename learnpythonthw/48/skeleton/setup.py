@@ -4,16 +4,16 @@ except ImportError:
     from distutils.core import setup
 
 config = {
-    'description': 'My Project',
-    'author': 'My Name',
-    'url': 'URL to get it at.',
-    'download_url': 'Where to download it.',
-    'author_email': 'My email.',
+    'description': 'k8 48 Project',
+    'author': 'k8',
+    'url': 'myfakeworld.com',
+    'download_url': 'myfakeworld.com/code',
+    'author_email': 'me@myfakeworld.com.',
     'version': '0.1',
     'install_requires': ['nose'],
-    'packages': ['NAME'],
+    'packages': ['ex48'],
     'scripts': [],
-    'name': 'projectname'
+    'name': 'k848Project'
 }
 
 setup(**config)
