@@ -4,11 +4,12 @@ from StringIO import StringIO
 USER_AGENT = 'OpenAnything/1.0 +http://diveintopython.org/http_web_services/'
 
 class SmartRedirectHandler(urllib2.HTTPRedirectHandler):
-	def http_error_301(self, req, fp, code, msg, headers):
-		result = urllib2.HTTPRedirectHandler.http_error_301(
-			self, req, fp, code, msg, headers)
-		result.status = code
-		return result
+    def http_error_301(self, req, fp, code, msg, headers):
+        result = urllib2.HTTPRedirectHandler.http_error_301(
+            self, req, fp, code, msg, headers)
+        result.status = code
+        return result
+
     def http_error_302(self, req, fp, code, msg, headers):
         result = urllib2.HTTPRedirectHandler.http_error_302(
             self, req, fp, code, msg, headers)
