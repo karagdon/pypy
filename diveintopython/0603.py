@@ -9,3 +9,5 @@ f.tell
 tagData = f.read(128)
 tagData
 f.tell
+f.read()
+f.close()
