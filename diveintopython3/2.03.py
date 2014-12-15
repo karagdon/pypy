@@ -31,4 +31,7 @@ is_it_true(0.0)
 import fractions
 is_it_true(fractions.Fraction(1, 2))
 is_it_true(fractions.Fraction(0, 1))
+# In boolean context, non-zero integers are true; 0 is false,
+# Non-zero floating point numbers are true (eg: 0.0)
+# Fractions can also be used in a boolean context. eg, Fraction (0, n) is false for all values of n, all other fractions are true.
 
