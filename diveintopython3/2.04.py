@@ -32,3 +32,23 @@ a_list.count('new')
 'new' in a_list
 
 'c' in a_list
+ 
+a_list.index('mpilgrim')
+a_list.index('new')
+a_list.index('c')
+
+# removing itmes frmo a list
+a_list = ['a','b', 'new', 'mpilgrim', 'new']
+a_list[1]
+
+del a_list[1]
+a_list
+
+a_list[1]
+
+a_list.remove('new')
+a_list
+a_list.remove('new')
+a_list
+a_list.remove('new')
+# >>> new is no longer in this list
