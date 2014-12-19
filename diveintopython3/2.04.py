@@ -1,4 +1,4 @@
-a_list = ['a', 'b' 'mpilgrim', 'z', 'example','1']
+Na_list = ['a', 'b' 'mpilgrim', 'z', 'example','1']
 a_list
 
 a_list[0]
@@ -52,3 +52,12 @@ a_list.remove('new')
 a_list
 a_list.remove('new')
 # >>> new is no longer in this list
+
+
+a_list = ['a','b', 'new', 'mpilgrim']
+a_list.pop()
+a_list
+a_list.pop(1)
+a_list
+a_list.pop()
+a_list
