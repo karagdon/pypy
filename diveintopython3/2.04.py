@@ -61,3 +61,13 @@ a_list.pop(1)
 a_list
 a_list.pop()
 a_list
+
+def is_it_true(anything):
+	if anything:
+	    print("yes, it's true")
+	else:
+	    print("no, it's false")
+	    
+is_it_true([])
+is_it_true(['a'])
+is_it_true([False])
