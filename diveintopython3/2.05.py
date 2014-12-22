@@ -16,3 +16,26 @@ It makes your code safer if you “write-protect” data that doesn’t need to 
 
 Some tuples can be used as dictionary keys (specifically, tuples that contain immutable values like strings, numbers, and other tuples). Lists can never be used as dictionary keys, because lists are not immutable.
 """
+
+def is_it_True(anything):
+	if anything:
+		print("Yes, it's true")
+	else:
+		print("no it's false")
+		
+is_it_true(())				#no, it's false
+is_it_true(('a', 'b'))		#yes, it's true
+is_it_true((False, ))		#yes, it's true
+type((False))				# <class 'bool'>
+type((False,))				# <class 'tuple'>
+
+v = ('a', 2, True)
+(x, y, z) = v
+x # 'a'
+y # 2
+z # True
+
+(MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY)
+MONDAY	# 0
+TUESDAY # 1
+SUNDAY # 6
