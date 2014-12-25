@@ -31,3 +31,9 @@ a_set.update({2, 4, 6})
 a_set.discard(4)
 a_set.pop()
 a_set.clear
+
+
+b_set = {1, 2, 3, 5, 6, 8, 9, 12, 15, 17, 18, 21}
+a_set.union(b_set)
+a_set.difference(b_set)
+a_set.symmetric_difference(b_set)
