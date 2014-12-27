@@ -15,4 +15,7 @@ a_dict['user'] = 'k8day'
 SUFFIXES = {1000: ['KB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB'],
 			1024: ['KiB', 'MiB', 'GiB', 'TiB', 'PiB', 'EiB', 'ZiB', 'YiB']}
 			
-len(SUFFIXES)
+len(SUFFIXES) #2
+1000 in SUFFIXES #True
+SUFFIXES[1000]
+SUFFIXES[1000][3]
