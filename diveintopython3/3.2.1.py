@@ -15,3 +15,7 @@ dirname
 filename
 (shortname, extension) = os.path.splitext(filename)
 shortname
+
+os.chdir('/var/host/media/removable/K8 PEARL/codex/pypy/diveintopython3/')
+import glob
+glob.glob('.py')
