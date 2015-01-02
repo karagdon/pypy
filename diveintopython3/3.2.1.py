@@ -18,4 +18,14 @@ shortname
 
 os.chdir('/var/host/media/removable/K8 PEARL/codex/pypy/diveintopython3/')
 import glob
-glob.glob('.py')
+glob.glob('*.py')
+# glob module use shell-like wildcards
+
+#### Getting file meta data
+
+print (os.getcwd())
+metadata = os.stat('feed.xml')
+metadata.st_mtime
+import time
+time.localtime(metadata.st_mtime)
+time.struct_time(tm_year=2009, tm_mon=7, tm_mday=13, tm_hour=17, tm_min=25, tm_sec=44, tm_wday=0, tm_yday=194, tm_isdst=1)
