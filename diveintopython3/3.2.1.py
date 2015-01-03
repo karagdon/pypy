@@ -33,3 +33,7 @@ time.struct_time(tm_year=2009, tm_mon=7, tm_mday=13, tm_hour=17, tm_min=25, tm_s
 metadata.st_size
 import humansize
 humansize.approsiate_Size(metadata.st_size)
+
+
+print (os.getcwd())
+print (os.path.realpath('feed.xml'))
