@@ -12,9 +12,17 @@ glob.glob('*.xml')
 [(os.stat(f).st_size, os.path.realpath(f)) for f in glob.glob('*.xml')]
 #	This list comprehension finds all the .xml files in the current working directory, gets the size of each file (by calling the os.stat() function), and constructs a tuple of the file size and the absolute path of each file (by calling the os.path.realpath() function).
 
+# A dictionary comprehension is like a list comprehension, but it constructs a dictionary instead of a list.
 # dictionary comprehensions
 metadata_dict = {f:os.stat(f) for f in glob.glob('*test*.py')}  ③
  
 # this is NOT dictionary comprehension
 metadata = [(f, os.stat(f)) for f in glob.glob('*test*.py')]
+
 metadata[0]
+
+metadata_dict = {f:os.stat(f) for f in glob.glob('*')}
+humansize_dict = {os.path.splitext(f)[0]:humansize.approximate_size(meta.st_size)
+				for f, meta in metadata_dict.items() if meta.st_size > 6000}
+list(humansize_dict.keys())
+
