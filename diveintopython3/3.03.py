@@ -26,3 +26,11 @@ humansize_dict = {os.path.splitext(f)[0]:humansize.approximate_size(meta.st_size
 				for f, meta in metadata_dict.items() if meta.st_size > 6000}
 list(humansize_dict.keys())
 
+a_dict = {'a': 1, 'b': 2, 'c': 3}
+{value:key for key, value in a_dict.items()}
+
+# SET COMPREHENSIONS
+a_set = set(range(10))
+{x for x in a_set if x % 2 == 0}
+{2**x for x in range(10)}
+#Set comprehensions do not need to take a set as input; they can take any sequence.
