@@ -34,3 +34,29 @@ a_set = set(range(10))
 {x for x in a_set if x % 2 == 0}
 {2**x for x in range(10)}
 #Set comprehensions do not need to take a set as input; they can take any sequence.
+
+#some practice
+>>> a_set = set(range(5))
+>>> a_set
+{0, 1, 2, 3, 4}
+>>> {(x**2)/2 for x in range(5)}
+{0.0, 0.5, 2.0, 8.0, 4.5}
+>>> {x+"set modified" for x in range(5)}
+#Traceback (most recent call last):
+# File "<stdin>", line 1, in <module>
+# File "<stdin>", line 1, in <setcomp>
+#TypeError: unsupported operand type(s) for +: 'int' and 'str'
+>>> {x+"a" for x in range(5)}
+#Traceback (most recent call last):
+# File "<stdin>", line 1, in <module>
+# File "<stdin>", line 1, in <setcomp>
+#TypeError: unsupported operand type(s) for +: 'int' and 'str'
+>>> {x+2 for x in range(5)}
+{2, 3, 4, 5, 6}
+>>> {"set item" for x in range(5)}
+{'set item'}
+
+>>> {str(x) for x in range(5)}
+{'2', '0', '3', '4', '1'}
+>>> {str(x)+"set item is now a string \n" for x in range(5)}
+{'4set item is now a string \n', '0set item is now a string \n', '1set item is now a string \n', '2set item is now a string \n', '3set item is now a string \n'}
