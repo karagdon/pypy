@@ -28,6 +28,9 @@ list(humansize_dict.keys())
 
 a_dict = {'a': 1, 'b': 2, 'c': 3}
 {value:key for key, value in a_dict.items()}
+a_dict = {'1': 'a', '2':'b', '3': 'c'}
+{value:key for key, value in a_dict.items()}
+
 
 # SET COMPREHENSIONS
 a_set = set(range(10))
