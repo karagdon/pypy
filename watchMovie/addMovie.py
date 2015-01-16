@@ -33,5 +33,6 @@ for eachArg in sys.argv[1:]:
     newMovie.append(str(eachArg))
 
 print ("Title: " + newMovie[0])
-print ("genres: " + i for i in newMovie[1:])
+print ("Genres :")
+print (i for i[1:] in newMovie)
 
