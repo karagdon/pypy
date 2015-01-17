@@ -24,4 +24,3 @@ mark as watched
 #	>>> foo="bar"
 #	>>> vars()[foo] = 'qwertry'
 #	>>> print bar  # --> 'qwertry'
-
