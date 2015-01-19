@@ -1,9 +1,11 @@
 """
 features:
 movie search by genre or keyword in title
- # re.search (variable, 'genre')
+# re.search (variable, 'genre')
  
 add a movie + genres
+	check if already exists
+
 edit a movie and genres
 mark as watched
 """
