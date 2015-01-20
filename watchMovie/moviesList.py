@@ -2,15 +2,40 @@ import argparse
 parser = argparse.ArgumentParser()
 
 
-parser.add_argument("-a", "--addMovie", dest = "add", help="add Movie")
-parser.add_argument("-e", "--editMovie", dest = "edit", help="edit Movie")
-parser.add_argument("-rm", "--removeMovie", dest = "remove", help="-remove Movie")
-parser.add_argument("-w", "--watched", dest = "watched", help="watched Movie")
+parser.add_argument("-a", "--addMovie", dest = "add", help="adds Movie")
+parser.add_argument("-e", "--editMovie", dest = "edit", help="edits Movie")
+parser.add_argument("-rm", "--removeMovie", dest = "remove", help="removes Movie")
+parser.add_argument("-w", "--watched", dest = "watched", help="mark Movie as watched")
 
 args = parser.parse_args()
 
 ##destination ( dest = "add") to function
-#def add()
-#sdef edit()
-#sdef remove()
-#sdef watched()
+"""
+movies_dict[title] = genres
+def add():
+
+#def edit():
+	# check if is in dict
+	if title in movies_dict:
+		with open('movies.txt', mode='w', encoding='utf-8') as movieFile:
+		movieFile.write(str(movies_dict))
+		print ("edit complete")
+	else:
+		print ("DNE")
+		pass
+	
+
+#def remove():
+	# check if is in dict
+	if title in movies_dict:
+		del movies_dict[title]
+		with open('movies.txt', mode='w', encoding='utf-8') as movieFile:
+		movieFile.write(str(movies_dict))
+		print ("deleted {title}, complete")
+	else:
+		print ("DNE")
+		pass
+	
+#def watched()
+
+"""
