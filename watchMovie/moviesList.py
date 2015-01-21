@@ -36,5 +36,10 @@ def add():
 		pass
 	
 #def watched()
+watched = 'watched'
+if watched in movies_dict:
+	pass
+else:
+	movies_dict[title].append(watched)
 
 """
