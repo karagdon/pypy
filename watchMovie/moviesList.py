@@ -1,7 +1,6 @@
 import argparse
 parser = argparse.ArgumentParser()
 
-
 parser.add_argument("-a", "--addMovie", dest = "add", help="adds Movie")
 parser.add_argument("-e", "--editMovie", dest = "edit", help="edits Movie")
 parser.add_argument("-rm", "--removeMovie", dest = "remove", help="removes Movie")
