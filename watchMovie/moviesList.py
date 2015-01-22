@@ -1,10 +1,10 @@
 import argparse
 parser = argparse.ArgumentParser()
 
-parser.add_argument("-a", "--addMovie", dest = "add", help="adds Movie")
-parser.add_argument("-e", "--editMovie", dest = "edit", help="edits Movie")
-parser.add_argument("-rm", "--removeMovie", dest = "remove", help="removes Movie")
-parser.add_argument("-w", "--watched", dest = "watched", help="mark Movie as watched")
+parser.add_argument("-a", "--addMovie", action="customActiontoAdd", dest = "add", help="adds Movie")
+parser.add_argument("-e", "--editMovie", action="customActiontoEdit", dest = "edit", help="edits Movie")
+parser.add_argument("-rm", "--removeMovie", action="customActiontoRemove", dest = "remove", help="removes Movie")
+parser.add_argument("-w", "--watched", action="customActiontoMarkWatched", dest = "watched", help="mark Movie as watched")
 
 args = parser.parse_args()
 
