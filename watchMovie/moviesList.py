@@ -9,7 +9,7 @@ parser.add_argument("-w", "--watched", action="customActiontoMarkWatched", dest 
 args = parser.parse_args()
 
 ##destination ( dest = "add") to function
-"""
+
 movies_dict[title] = genres
 def add():
 
@@ -41,5 +41,3 @@ if watched in movies_dict:
 	pass
 else:
 	movies_dict[title].append(watched)
-
-"""
