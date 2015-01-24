@@ -9,15 +9,12 @@ genres = argv[2:]
 with open('movies.txt','r', encoding='utf-8') as movieFile:
     movies_dict = eval(movieFile.read())
 
+movies_dict[title] = genres
 
 
 for k in movies_dict:
-	for i in genres:
-		print i
-	print (k, genres)
-
-
-movies_dict[title] = genres
+	
+	print (k, movies_dict.items())
 
 """
 # check if is in dict
