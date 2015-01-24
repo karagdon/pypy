@@ -3,19 +3,23 @@ import sys
 from sys import argv
 movie_dict = {}
 title = argv[1]
-genres = argv[2:]
+genres = str(argv[2:])
 
 #read the file
 with open('movies.txt','r', encoding='utf-8') as movieFile:
     movies_dict = eval(movieFile.read())
-
+type(movies_dict.values())
 movies_dict[title] = genres
 
-
-for k in movies_dict:
+for key, values in movies_dict.items():
+	print (key + "\t: " + str(values).strip('[\']'))
 	
-	print (k, movies_dict.items())
+	
+#print (', '.join(movies_dict.values()))
 
+
+#	print (k + "\t : " +  str(movies_dict[k]).strip('[]'))
+	
 """
 # check if is in dict
 if title in movies_dict:
