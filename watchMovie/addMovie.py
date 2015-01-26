@@ -13,7 +13,7 @@ movies_dict[title] = genres
 
 for key, values in movies_dict.items():
 	print (key + "\t: " + str(values).strip('[\']'))
-	
+#todo-- take off extra punctuation in lists
 	
 #print (', '.join(movies_dict.values()))
 
