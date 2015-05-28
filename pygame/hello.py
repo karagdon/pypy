@@ -23,7 +23,7 @@ img=pygame.image.load("simple.jpg").convert()
 while True:
   #calls out all the events that are occuring, when it encounters QUIT:
   # it will exit the loop, close the display
-  for i in pygame.event.get()
+  for i in pygame.event.get():
     if i.type==QUIT:
       exit()
       
