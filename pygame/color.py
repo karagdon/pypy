@@ -14,3 +14,5 @@ while True:
    exit()
  screen.fill((r, g, b))
  pygame.display.update()
+ 
+ 
