@@ -12,6 +12,16 @@ GREEN = ( 0, 255, 0)
 BLUE = ( 0, 0, 255)
 # draw on the surface object
 DISPLAYSURF.fill(WHITE)
+"""
+fill(color) – The fill() method is not a function but a method of pygame.Surface objects. It will completely fill in the entire Surface object with whatever color value you passas for the color parameter
+"""
+
+
+"""
+pygame.draw.polygon(surface, color, pointlist, width) – A polygon is shape made up of
+only flat sides. The surface and color parameters tell the function on what surface to
+draw the polygon, and what color to make it.
+"""
 pygame.draw.polygon(DISPLAYSURF, GREEN, ((146, 0), (291, 106), (236, 277), (56, 277), (0, 106)))
 pygame.draw.line(DISPLAYSURF, BLUE, (60, 60), (120, 60), 4)
 pygame.draw.line(DISPLAYSURF, BLUE, (120, 60), (60, 120))
