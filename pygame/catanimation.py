@@ -45,3 +45,5 @@ for event in pygame.event.get():
 
 pygame.display.update()
 fpsClock.tick(FPS)
+
+# warning, chrouton will start with a black screen then progress slowly
